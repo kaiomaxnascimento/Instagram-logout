@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem equivale a 10px*/
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    max-width: 192rem;
+    margin: auto;
+    background-color: rgb(249, 249, 249);
+}
+
+main {
+    position: relative;
+    max-width: 90rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10rem auto;
+    
+}
+
+.img-cel {
+    background-image: url('imgs/cel-insta.png');
+    content: '';
+    width: 40rem;
+    height: 64.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.slick-slider {
+    width: 26.7rem!important;
+    position: absolute!important;
+    left: 14.8rem;
+    top: 7.1rem;
+}
+
+.slick-arrow {
+    border: none;
+    background: transparent;
+    font-size: 0rem;
+    display: none;
+}
+
+.slick-slide div img {
+    border: solid 3px rgb(68, 68, 68);
+}
+
+.col-log {
+    text-align: center;
+    width: 40rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-log div {
+    margin: .5rem 0rem;
+}
+
+.log-account {
+    border: solid 1px rgb(218, 218, 218);
+    background-color: white;
+    padding-top: 2rem;
+}
+
+.foto-pessoa img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+}
+
+.buttons-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-1 button {
+    padding: .7rem;
+    font-weight: bold;
+    margin: 1rem;
+    width: 25rem;
+    border: none;
+    background-color: transparent;
+}
+
+button.continue-acc {
+    background-color: #0095f6;
+    border-radius: .5rem;
+    color: white;
+}
+
+button.remove-acc {
+    color: #0095f6;
+}
+
+.create {
+    border: solid 1px rgb(218, 218, 218);
+    background-color: white;
+    font: 600 1.5rem sans-serif;
+    padding: 3rem;
+    color: rgb(136, 136, 136);
+}
+
+.create p a {
+    color: #0095f6;
+}
+
+.buttons-2 button {
+    background-color: transparent;
+    border: none;
+}
+
+.buttons-2 button img {
+    width: 15rem;
+}
+
+.get-app p {
+    font: 600 1.5rem sans-serif;
+    margin: 2rem;
+    color: #4e4e4e;
+}
+
+.get-app div button {
+    margin: 0 .5rem;
+}
+
+footer {
+    max-width: 90rem;
+    margin: auto;
+    font-size: 1.2rem;
+    
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer div a {
+    line-height: 2.5rem;
+    color: rgb(128, 128, 128);
+    margin: 1.2rem;
+}
+
+div.links-ext div a:active {
+    color: rgb(204, 204, 204);
+}
+
+.footer-2 {
+    margin-top: 1rem;
+}
+
+select.idioma {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(128, 128, 128);
+    width: 11rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+p.copy {
+    color: rgb(128, 128, 128);
+}
+
+@media (max-width: 900px) {
+    .img-cel {
+        display: none;
+    }
+
+    main, footer {
+        padding: 2rem;
+        margin: 0rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .log-account, .create  {
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+
+    .buttons-2 button img {
+        width: 12rem;
+    }
+
+    footer div a {
+        margin: .8rem;
+    }
+    
+    .footer-2 {
+        margin-top: 1.5rem;
+    }
+
+    select.idioma {
+        margin-right: 1rem;
+    }
+}
